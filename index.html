@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abandoned but not Forgotten | NASA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2>🚀 SPACE LEGACY</h2>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#moon">Moon</a>
+            <a href="#mars">Mars</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#sources">Sources</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <p class="tagline">A JOURNEY THROUGH SPACE HISTORY</p>
+
+        <h1>Abandoned but<br>not Forgotten</h1>
+
+        <p>
+            Every mission leaves something behind.
+            Discover the forgotten equipment on the
+            Moon and Mars.
+        </p>
+
+        <a href="#moon" class="explore-btn">
+            Explore Their Stories →
+        </a>
+    </section>
+
+    <section id="moon" class="section">
+        <h2>🌕 Left Behind on the Moon</h2>
+
+        <p>Explore the equipment left behind
+        during the Apollo missions.</p>
+        <img
+    src="moon-rover.jpg"
+    alt="Apollo Lunar Rover on the Moon"
+    class="moon-image"
+>
+
+        <div class="cards">
+
+            <div class="card">
+    <h3>Lunar Module Descent Stage</h3>
+    <p>The lower part of the Apollo Lunar Module remained on the Moon.</p>
+
+    <details>
+        <summary>Read More</summary>
+        <p>
+            The descent stage helped astronauts land
+            safely on the Moon. After the astronauts
+            returned to the Command Module, the
+            descent stage remained on the lunar surface.
+        </p>
+    </details>
+</div>
+           <div class="card">
+    <h3>Lunar Roving Vehicle</h3>
+    <p>An electric vehicle used by Apollo astronauts to explore the Moon.</p>
+
+    <details>
+        <summary>Read More</summary>
+        <p>
+            The Lunar Roving Vehicle was used during
+            Apollo 15, Apollo 16 and Apollo 17 missions.
+            It helped astronauts travel farther across
+            the lunar surface and collect scientific samples.
+            The rover was left on the Moon after each mission.
+        </p>
+    </details>
+</div>
+
+            <div class="card">
+    <h3>ALSEP Experiments</h3>
+    <p>Scientific instruments deployed by Apollo astronauts on the Moon.</p>
+
+    <details>
+        <summary>Read More</summary>
+        <p>
+            ALSEP stands for Apollo Lunar Surface Experiments Package.
+            These instruments were installed by astronauts
+            to study moonquakes, lunar soil and the Moon's environment.
+            They sent scientific data back to Earth for years.
+        </p>
+    </details>
+</div>
+
+        </div>
+    </section>
+
+    <section id="mars" class="section">
+        <h2>🔴 Left Behind on Mars</h2>
+
+        <p>Discover the landing equipment that
+        helped NASA rovers reach Mars.</p>
+        <img
+    src="mars_components.png"
+    alt="NASA Perseverance landing components on Mars"
+    class="mars-image"
+>
+
+<p>NASA's Perseverance landing site and the equipment left behind on Mars.</p>
+
+        <div class="cards">
+
+            <div class="card">
+    <h3>Parachute</h3>
+    <p>Helped slow down the Perseverance rover during its landing on Mars.</p>
+
+    <details>
+        <summary>Read More</summary>
+        <p>
+            The parachute helped reduce the spacecraft's speed
+            as it travelled through the Martian atmosphere.
+            It was part of the Mars 2020 landing system.
+        </p>
+    </details>
+</div>
+
+            <div class="card">
+    <h3>Backshell</h3>
+    <p>Protected the rover during its journey through the Martian atmosphere.</p>
+
+    <details>
+        <summary>Read More</summary>
+        <p>
+            The backshell protected the spacecraft during its
+            journey through the Martian atmosphere.
+            It also carried the parachute used during landing.
+        </p>
+    </details>
+</div>
+
+            <div class="card">
+    <h3>Sky Crane</h3>
+    <p>Lowered the Curiosity rover safely onto the Martian surface.</p>
+
+    <details>
+        <summary>Read More</summary>
+        <p>
+            NASA used the Sky Crane landing system
+            to gently lower the Curiosity rover
+            onto Mars using cables.
+            After landing, the Sky Crane flew away
+            and crashed at a distance.
+        </p>
+    </details>
+</div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section">
+        <h2>📅 Space Mission Timeline</h2>
+        <div id="timeline-content"></div>
+    </section>
+
+
+<section id="quiz" class="section">
+    <h2>🚀 Space Knowledge Quiz</h2>
+    <p>Test your knowledge about Moon and Mars missions!</p>
+
+    <div class="card quiz-card">
+        <h3 id="question">Question will appear here</h3>
+
+        <div id="options" class="quiz-options"></div>
+
+        <p id="quiz-result"></p>
+
+        <button id="next-btn" onclick="nextQuestion()" disabled>
+            Next Question →
+        </button>
+
+        <p id="score"></p>
+    </div>
+</section>
+<section id="sources" class="section">
+    <h2>📚 Sources & Credits</h2>
+    <p>Explore the original NASA resources used in this project.</p>
+
+    <div class="card">
+        <h3>NASA – Perseverance Mission</h3>
+        <p>
+            Information and images about the Mars 2020 landing system.
+        </p>
+        <a href="https://science.nasa.gov/mission/mars-2020-perseverance/"
+           target="_blank">
+            Visit NASA →
+        </a>
+    </div>
+
+    <div class="card">
+        <h3>NASA – Apollo Missions</h3>
+        <p>Explore the Apollo missions and lunar exploration history.</p>
+        <a href="https://www.nasa.gov/the-apollo-program/"
+           target="_blank">
+            Visit NASA →
+        </a>
+    </div>
+</section>
+    <footer>
+        <p>Abandoned but not Forgotten 🚀</p>
+        <p>A Digital Space History Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

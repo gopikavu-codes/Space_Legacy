@@ -1,0 +1,299 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080b18;
+    color: white;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #10162b;
+}
+
+.navbar h2 {
+    color: #8ed8ff;
+    letter-spacing: 2px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #8ed8ff;
+}
+
+/* Home Section */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background:
+    linear-gradient(rgba(5,8,20,0.55), rgba(5,8,20,0.9)),
+    url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.tagline {
+    color: #8ed8ff;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 550px;
+    line-height: 1.8;
+    color: #d1d5e5;
+}
+
+.explore-btn {
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #4aa9e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #176cae;
+    transform: scale(1.05);
+}
+
+/* Content Sections */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+    color: #8ed8ff;
+}
+
+.section > p {
+    color: #b9c2d5;
+    margin-bottom: 35px;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #151e36;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #283a5a;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #65c5ff;
+}
+
+.card h3 {
+    color: #8ed8ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #c4ccda;
+    line-height: 1.7;
+}
+
+/* Timeline */
+
+#timeline-content {
+    margin-top: 30px;
+    color: #d1d5e5;
+}
+
+/* Footer */
+
+footer {
+    background: #10162b;
+    text-align: center;
+    padding: 30px;
+    color: #8ed8ff;
+    line-height: 2;
+}
+
+/* Mobile Design */
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar a {
+        margin: 0 6px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+}
+.mars-image {
+    width: 80%;
+    max-width: 850px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 2px solid #8ed8ff;
+}
+.moon-image {
+    width: 80%;
+    max-width: 850px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 2px solid #8ed8ff;
+}
+
+details {
+    margin-top: 18px;
+    text-align: left;
+    color: #d1d5e5;
+}
+
+details summary {
+    display: inline-block;
+    color: #8ed8ff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: 1px solid #4aa9e9;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+details summary:hover {
+    background: #176cae;
+    color: white;
+}
+
+details p {
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+.quiz-card {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.quiz-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.quiz-options button,
+#next-btn {
+    background: #176cae;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.quiz-options button:hover,
+#next-btn:hover {
+    background: #4aa9e9;
+    transform: scale(1.05);
+}
+
+#next-btn {
+    margin-top: 20px;
+}
+
+#next-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .mars-image,
+    .moon-image {
+        width: 100%;
+    }
+
+    .section h2 {
+        font-size: 25px;
+    }
+
+    .quiz-options {
+        flex-direction: column;
+    }
+
+    .quiz-options button {
+        width: 100%;
+    }
+}
