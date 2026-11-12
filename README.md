@@ -43,3 +43,8 @@ Educational Web Development Project
 ---
 
 **SPACE LEGACY – Every abandoned object has a story.** 🌌
+## 🌐 Live Website
+
+Explore SPACE LEGACY here:
+
+https://incandescent-squirrel-d3b81f.netlify.app
